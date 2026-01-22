@@ -14,6 +14,9 @@ This project simulates a systems engineering analytics stack for **system health
 - `python/` — notebooks + scripts (data generation, anomaly detection)
 - `data/` — generated and cleaned CSVs (small sample only)
 
+## Dashboard preview
+<img src="powerbi/screenshots/overview_dashboard.png" alt="Fleet system health dashboard overview" width="480" />
+
 ## Key skills demonstrated (ATS keywords)
 SQL · window functions · joins · aggregations · query optimization  
 Snowflake · data warehouse · data models · curated marts  
