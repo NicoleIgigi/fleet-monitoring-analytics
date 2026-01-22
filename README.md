@@ -17,6 +17,32 @@ This project simulates a systems engineering analytics stack for **system health
 ## Dashboard preview
 <img src="powerbi/screenshots/overview_dashboard.png" alt="Fleet system health dashboard overview" width="480" />
 
+### What this dashboard answers
+- Fleet reliability (success rate) trend over time
+- Safety signal via critical events per 100 flights
+- Which regions are most at risk
+- How reliability differs by region and vehicle model
+
+### Key definitions (simple)
+- Reliability (Weighted) = successful flights ÷ total flights
+- Critical events per 100 flights = (critical events ÷ total flights) × 100
+- Status thresholds: Good ≥ 95%, Watch 93–95%, Risk < 93%
+- Target line: 95% reliability
+
+### Vehicle model definitions (A, B, C)
+The `model` field represents simulated platform variants:
+- We have model A, model B, and model C. 
+
+### Current findings (based on your current view)
+- Overall reliability ≈ 94.75% → Watch (below 95% target)
+- West and East are lowest reliability (top regions at risk)
+- Safety trend fluctuates and rises near the end of the window → needs investigation
+
+### Actions you’d take (systems thinking)
+- Investigate weeks where reliability dips: correlate with event spikes
+- Break down critical events by event type (comms loss, battery drop, etc.)
+- Identify whether issues are model-specific or region-specific
+
 ## Key skills demonstrated (ATS keywords)
 SQL · window functions · joins · aggregations · query optimization  
 Snowflake · data warehouse · data models · curated marts  
@@ -29,3 +55,15 @@ Python · pandas · numpy · matplotlib · Jupyter · anomaly detection
 3) Create Snowflake warehouse layers + marts  
 4) Build Power BI dashboard (exec + engineering views)  
 5) Add Python anomaly detection feeding incidents back to analytics
+
+
+## How to run the pipeline
+
+Install dependencies, then run the one-command pipeline:
+
+python python/src/run_all.py
+
+This regenerates:
+- data/raw/*.csv
+- data/clean/*.csv
+- data/outputs/weekly_metrics.csv (used by the Power BI dashboard)
