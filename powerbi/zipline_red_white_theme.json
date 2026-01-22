@@ -1,0 +1,34 @@
+{
+    "name": "Zipline Red & White",
+    "dataColors": [
+      "#E11D2E",
+      "#111827",
+      "#6B7280",
+      "#F97316",
+      "#2563EB",
+      "#10B981"
+    ],
+    "background": "#FFFFFF",
+    "foreground": "#111827",
+    "tableAccent": "#E11D2E",
+    "visualStyles": {
+      "*": {
+        "*": {
+          "title": [
+            {
+              "fontFamily": "Segoe UI",
+              "fontSize": 14,
+              "color": { "solid": { "color": "#111827" } }
+            }
+          ],
+          "labels": [
+            {
+              "fontFamily": "Segoe UI",
+              "color": { "solid": { "color": "#111827" } }
+            }
+          ]
+        }
+      }
+    }
+  }
+  
