@@ -1,0 +1,17 @@
+# Project story: System Health Monitoring for a Delivery Fleet
+
+## Problem
+Systems engineering teams need fast, reliable visibility into fleet health.
+This project builds a monitoring analytics pipeline that turns raw logs into:
+- reliability KPIs (success rate, failure rate per 100 flights)
+- safety signals (critical event rate)
+- incident summaries (top vehicles/routes, recurring issues)
+
+## Users
+- Executives: weekly reliability and safety trends
+- Engineers: drill-down by vehicle, route, event type, time window
+
+## Outputs
+- Curated analytics marts (Snowflake)
+- Monitoring dashboard (Power BI)
+- Incident report + anomaly detection (Python)

@@ -205,3 +205,23 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Virtual env
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Power BI (optional: keep PBIX tracked OR not - we will decide later)
+# *.pbix
+
+# Generated outputs
+data/outputs/
+python/outputs/
+powerbi/exports/
