@@ -225,4 +225,5 @@ __pycache__/
 data/outputs/
 python/outputs/
 powerbi/exports/
+!powerbi/exports/
 !powerbi/exports/Fleet_System_Health_Dashboard.pdf
