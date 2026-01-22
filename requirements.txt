@@ -1,0 +1,13 @@
+# Core data tools
+pandas
+numpy
+matplotlib
+
+# Local SQL engine (lets us run window functions without installing Postgres)
+duckdb
+
+# Jupyter notebooks
+jupyter
+
+# Optional (faster file formats)
+pyarrow
