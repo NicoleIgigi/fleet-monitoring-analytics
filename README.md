@@ -7,6 +7,8 @@ This project simulates a systems engineering analytics stack for **system health
 - Build a **Power BI monitoring dashboard** with drilldowns + alert thresholds
 - Run **Python** anomaly detection and generate an incident report
 
+📌 Metrics reference: [docs/metrics_definition.md](docs/metrics_definition.md)
+
 ## What you’ll find here
 - `sql/` — SQL schema + metric queries (reliability, safety, incident rates)
 - `snowflake/` — warehouse scripts and curated marts
