@@ -43,6 +43,15 @@ The `model` field represents simulated platform variants:
 - Break down critical events by event type (comms loss, battery drop, etc.)
 - Identify whether issues are model-specific or region-specific
 
+## Drivers dashboard
+<img src="powerbi/screenshots/drivers_page.png" alt="Critical event drivers dashboard" width="480" />
+Critical Event Drivers: The highest driver of high/critical safety events is GPS Glitch (88 events in the current view), followed by Battery Drop and Motor Temp High. This view helps prioritize root-cause investigation by event type and segment findings by region/model via filters.
+
+## Results
+- Overall reliability is monitored weekly against a 95% target
+- West/East show lower reliability in the current view (risk prioritization)
+- GPS Glitch is the top critical event driver (drivers page)
+
 ## Key skills demonstrated (ATS keywords)
 SQL · window functions · joins · aggregations · query optimization  
 Snowflake · data warehouse · data models · curated marts  
