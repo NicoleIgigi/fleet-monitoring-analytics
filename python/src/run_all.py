@@ -41,6 +41,14 @@ def main() -> None:
         repo_root,
     )
 
+    # Step 3: Summarize event drivers (event types)
+    run_step(
+        "Summarize event drivers (event types)",
+        [sys.executable, "python/src/run_event_summary_duckdb.py"],
+        repo_root,
+    )
+
+
     print("\n✅ Pipeline complete!")
     print("Output file: data/outputs/weekly_metrics.csv")
 
