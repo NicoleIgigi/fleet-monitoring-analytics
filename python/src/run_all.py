@@ -48,6 +48,13 @@ def main() -> None:
         repo_root,
     )
 
+    run_step(
+        "Validate output datasets",
+        [sys.executable, "python/src/validate_outputs.py"],
+        repo_root,
+    )
+
+
 
     print("\n✅ Pipeline complete!")
     print("Output file: data/outputs/weekly_metrics.csv")
