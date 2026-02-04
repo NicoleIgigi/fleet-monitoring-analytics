@@ -94,7 +94,7 @@ Critical Event Drivers: The highest driver of high/critical safety events is GPS
 - West/East show lower reliability in the current view (risk prioritization)
 - GPS Glitch is the top critical event driver (drivers page)
 
-## Key skills demonstrated (ATS keywords)
+## Key skills demonstrated 
 SQL · window functions · joins · aggregations · query optimization  
 Snowflake · data warehouse · data models · curated marts  
 Power BI · dashboarding · monitoring · alert thresholds · stakeholder reporting  
